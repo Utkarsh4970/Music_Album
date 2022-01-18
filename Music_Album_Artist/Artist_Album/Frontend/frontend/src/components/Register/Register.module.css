@@ -1,0 +1,48 @@
+/* .parent{
+    background-color: rgb(241, 124, 70);
+    width: 1000px;
+    height: 800px;
+    margin: auto;
+    
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+.card1{
+    padding: 10px;
+  width: 350px;
+  border: 1px solid black;
+  background-color: blueviolet;
+}
+.card2{
+    padding: 10px;
+    width: 350px;
+    border: 1px solid black;
+    background-color: cadetblue;
+  }
+  .back4 {
+   
+    margin-left: 2.98vw;
+    margin-top: 3.2vh;
+
+    border: 1px solid #0066ee;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background: #ffffff;
+   
+    font-size: 1.3177159590043923vw;
+    width: 12.298682284040996vw;
+    height: 6.437768240343348vh;
+    color: #0066ee;
+  
+    transition: 0.3s ease-out;
+    
+  }
+  .back4:hover {
+    background-color: #005bd4;
+    border: 1px solid #005bd4;
+    color: white;
+  } */
