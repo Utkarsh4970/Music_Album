@@ -5,7 +5,6 @@ import { Access_page } from './components/Artist_access';
 
 import { Artist_page } from './components/Artist';
 
-import { Song_form } from './components/Songform';
 import {Register_page } from './components/Register';
 import { useState } from "react";
 import { Album_page } from "./components/Album";
@@ -41,26 +40,24 @@ function App() {
         <Route exact path="/login">
           <Login_page prev={email}/>
         </Route>
-        <Route path="/artist">
-          <Artist_page next1={"/album"} next2={"/song"} next3={"/access"} next4={em} />
+        <Route path="/admin">
+          <Artist_page next1={"/album"} next2={"/song"} next3={"/guest"} next4={em} />
         </Route>
         <Route exact path="/album">
           <Album_page />
         </Route>
-        <Route exact path="/song">
-          <Song_form  />
-        </Route>
-        <Route path="/access">
+        
+        <Route path="/guest">
           <Access_page prev={lis} />
         </Route>
-        <Route exact path="/songlist/:id">
+        <Route exact path="/song/:id">
           <Song_page next={sm} />
         </Route>
 
         </Switch>
         {/* <Login_page /> */}
       {/* <Access/> */}
-      {/* <artist/> */}
+      {/* <admin/> */}
       {/* <Contest/> */}
      {/* <SignUpForm4 /> */}
     </div>

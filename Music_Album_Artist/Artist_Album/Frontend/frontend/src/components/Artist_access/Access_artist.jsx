@@ -115,23 +115,23 @@ export const Access = ({ prev, next }) => {
         let song_listdata = el;
 
         prev(song_listdata);
-        history.push(`/songlist/${t}`)
+        history.push(`/song/${t}`)
 
     }
     const handleprev = () => {
 
         setCount((e) => e - 1)
-        history.push(`/access/${count - 1}`)
+        history.push(`/guest/${count - 1}`)
     }
     const handlenext = () => {
         //console.log(count)
         setCount((e) => e + 1)
-        history.push(`/access/${count + 1}`)
+        history.push(`/guest/${count + 1}`)
     }
 
     const handlenum = (e) => {
         setCount(e)
-        history.push(`/access/${e}`)
+        history.push(`/guest/${e}`)
     }
 
 

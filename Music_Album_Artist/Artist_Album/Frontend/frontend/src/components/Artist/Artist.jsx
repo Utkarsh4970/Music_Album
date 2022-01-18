@@ -105,28 +105,28 @@ export const Artist = ({ next1, next2, next3, next4 }) => {
             return e;
         })
         setC_data(add_data);
-        history.push(`/artist/${u}`)
+        history.push(`/admin/${u}`)
     }
 
     const handleprev = () => {
 
         setCount((e) => e - 1)
-        history.push(`/artist/${count - 1}`)
+        history.push(`/admin/${count - 1}`)
     }
     const handlenext = () => {
         //console.log(count)
         setCount((e) => e + 1)
-        history.push(`/artist/${count + 1}`)
+        history.push(`/admin/${count + 1}`)
     }
 
     const handlenum = (e) => {
         setCount(e)
-        history.push(`/artist/${e}`)
+        history.push(`/admin/${e}`)
     }
 
 
 
-    return st === true ? (<Redirect to="/access" />) : (
+    return st === true ? (<Redirect to="/guest" />) : (
         <div className={styles.main}>
             <div className={styles.nav}>
                 <Link to={next1}>
@@ -165,7 +165,7 @@ export const Artist = ({ next1, next2, next3, next4 }) => {
             </div>
             <button onClick={handleprev}>prev</button>
             {arr.map((e) => {
-                return <button onClick={() => { handlenum(e) }} key={e}>{e}</button>
+                return <button style={{margin: "10px", width: "60px"}} onClick={() => { handlenum(e) }} key={e}>{e}</button>
             })}
 
             <button onClick={handlenext}>next</button>

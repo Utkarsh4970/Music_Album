@@ -58,7 +58,7 @@ setStatus(true)
 
 
     return status === true ? (
-        <Redirect to="/artist" />
+        <Redirect to="/admin" />
           
       ) :(
         <div>

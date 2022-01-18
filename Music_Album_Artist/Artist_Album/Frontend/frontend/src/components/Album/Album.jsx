@@ -50,7 +50,7 @@ export const Album = ({ prev, next }) => {
     }
 
     return status === 200 ? (
-        <Redirect to="/artist" />
+        <Redirect to="/admin" />
           
       ) : (
         <div className={styles.main}>

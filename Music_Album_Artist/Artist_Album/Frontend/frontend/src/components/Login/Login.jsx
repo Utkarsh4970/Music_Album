@@ -65,7 +65,7 @@ export const Login = ({ prev, next }) => {
 
 
     return status === true ? (
-        <Redirect to="/artist" />
+        <Redirect to="/admin" />
           
       ) :(
         <div>
